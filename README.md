@@ -9,10 +9,9 @@
 ## STEPS:
 1. sudo su - root
 2. yum install docker
-3. systemctl docker start
-4. systemctl start docker
-5. docker pull malharchikhale/newsletter-signup:0.0.1.RELEASE
-6. docker container run -d -p 3000:3000 malharchikhale/newsletter-signup:0.0.1.RELEASE
+3. systemctl start docker
+4. docker pull malharchikhale/newsletter-signup:0.0.1.RELEASE
+5. docker container run -d -p 3000:3000 malharchikhale/newsletter-signup:0.0.1.RELEASE
 
 #### Now, On Browser enter <ipv4:3000>
 
