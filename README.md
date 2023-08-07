@@ -10,9 +10,10 @@
 1. sudo su - root
 2. yum install docker
 3. systemctl start docker
-4. docker pull malharchikhale/newsletter-signup:0.0.1.RELEASE
-5. docker container run -d -p 3000:3000 malharchikhale/newsletter-signup:0.0.1.RELEASE
+4. docker pull malharchikhale/newsletter-signup:latest
+5. docker container run -d -p 3000:3000 malharchikhale/newsletter-signup:latest
 
 #### Now, On Browser enter <ipv4:3000>
 
 ### It will give a webpage that allows you to fill in some details like your name, last name, and email id.
+### And the provided info will get saved in the MailChimp server
