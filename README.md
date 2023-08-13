@@ -11,7 +11,7 @@
 2. yum install docker
 3. systemctl start docker
 4. docker pull malharchikhale/newsletter-signup:latest
-5. docker container run -d -p 3000:3000 malharchikhale/newsletter-signup:latest
+5. docker container run -d -p 3000:3000 -e API_KEY="random_name:your_mail_chimp_api_key" malharchikhale/newsletter-signup:latest 
 
 #### Now, On Browser enter <ipv4:3000>
 
