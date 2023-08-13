@@ -1,0 +1,11 @@
+// This file will run the container.
+// with command "docker-compose -f Run-compose.yml up"
+
+version: '3.8'
+services:
+  newsletter_app:
+    image: malharchikhale/newsletter-signup:latest
+    ports:
+      - "3000:3000"  //first port is for container on host machine and Second is for node.js application which is running inside the container.
+    environment:
+      - API_KEY=random_name:your_mail_chimp_api_key
